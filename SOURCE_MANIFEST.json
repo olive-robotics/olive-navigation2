@@ -1,0 +1,701 @@
+{
+  "component": "Navigation2 / AMCL",
+  "olive_source_release_tag": "olive-navigation2-sources-20261124",
+  "source_changes": "No Olive changes to upstream source; only source-delivery documentation, archives and additional license copies.",
+  "versions": [
+    {
+      "component": "nav2_amcl",
+      "distro": "humble",
+      "package_version": "1.1.19",
+      "upstream_commit": "bf40e4d5dfdd02d24e05e75f14a770cb9e349be9",
+      "source_archive": "navigation2-1.1.19.tar.gz",
+      "archive_sha256": "fa84ad1060ca40979a3e48f9c44ce1ca8e40a2b0a095eebb2c2cac2d22622641",
+      "archive_bytes": 49370020,
+      "archive_url": "https://codeload.github.com/ros-navigation/navigation2/tar.gz/refs/tags/1.1.19",
+      "verified_upstream_file_count": 1389,
+      "installed_files_matching": [
+        {
+          "installed_file": "share/nav2_amcl/package.xml",
+          "source_file": "package.xml",
+          "sha256": "13e1108d6620282578b2890b06187dfe40606ff4f923c170dd82cf7b5b00fde1"
+        },
+        {
+          "installed_file": "share/nav2_amcl/plugins.xml",
+          "source_file": "plugins.xml",
+          "sha256": "39aa809b85e0b45d86bf08ee51000182be1972f98bc6e75293a8ec08a3c27258"
+        },
+        {
+          "installed_file": "include/nav2_amcl/portable_utils.hpp",
+          "source_file": "include/nav2_amcl/portable_utils.hpp",
+          "sha256": "7d23316bedb70d9e49a2780b5937fccf312497c92e1c854f39018abb29c1f2d0"
+        },
+        {
+          "installed_file": "include/nav2_amcl/amcl_node.hpp",
+          "source_file": "include/nav2_amcl/amcl_node.hpp",
+          "sha256": "4cfa6e727e05e498444b1f35d659472bc34579f4000e22ec286c0c7207703bdb"
+        },
+        {
+          "installed_file": "include/nav2_amcl/angleutils.hpp",
+          "source_file": "include/nav2_amcl/angleutils.hpp",
+          "sha256": "e84153118322e9531fb92a9eeb5f47189af7f86af8854bce855da66b106d64df"
+        },
+        {
+          "installed_file": "include/nav2_amcl/pf/pf.hpp",
+          "source_file": "include/nav2_amcl/pf/pf.hpp",
+          "sha256": "e3a5f7c84e1ae290faa56ff386ffc151c5c071d52421279bebdec34f1296659a"
+        },
+        {
+          "installed_file": "include/nav2_amcl/pf/eig3.hpp",
+          "source_file": "include/nav2_amcl/pf/eig3.hpp",
+          "sha256": "ded0cd9eb84c4cec085212b32ff16181ddb5fc2dc7bbd217c254747c354a55cb"
+        },
+        {
+          "installed_file": "include/nav2_amcl/pf/pf_vector.hpp",
+          "source_file": "include/nav2_amcl/pf/pf_vector.hpp",
+          "sha256": "1cafc26520ff368848614d6291094c55d83be9f7832516a23cea25d1cd45539f"
+        },
+        {
+          "installed_file": "include/nav2_amcl/pf/pf_pdf.hpp",
+          "source_file": "include/nav2_amcl/pf/pf_pdf.hpp",
+          "sha256": "228e4a9bb6fe5ba3bd59879106110bc3721fdec3cab6a5f0e2776f60cb80542c"
+        },
+        {
+          "installed_file": "include/nav2_amcl/pf/pf_kdtree.hpp",
+          "source_file": "include/nav2_amcl/pf/pf_kdtree.hpp",
+          "sha256": "2cd9157e9570afe56522f1565757d40df813db39f8fb548c5175a3795c624fbd"
+        },
+        {
+          "installed_file": "include/nav2_amcl/motion_model/differential_motion_model.hpp",
+          "source_file": "include/nav2_amcl/motion_model/differential_motion_model.hpp",
+          "sha256": "d94f2db89932252f90d0379870cfb2109d64392b891102fb8d9be6aeb9966bde"
+        },
+        {
+          "installed_file": "include/nav2_amcl/motion_model/motion_model.hpp",
+          "source_file": "include/nav2_amcl/motion_model/motion_model.hpp",
+          "sha256": "59060ff2e3603093814408e3f0bcbbd92b2e256f0a23f791e6f0b19e23067b10"
+        },
+        {
+          "installed_file": "include/nav2_amcl/motion_model/omni_motion_model.hpp",
+          "source_file": "include/nav2_amcl/motion_model/omni_motion_model.hpp",
+          "sha256": "2c701a2d14198df3cde2cd4f164815a6188d10de8cab8e59ff09c0374362553d"
+        },
+        {
+          "installed_file": "include/nav2_amcl/sensors/laser/laser.hpp",
+          "source_file": "include/nav2_amcl/sensors/laser/laser.hpp",
+          "sha256": "602056f75249a084d3e0f26040114e74351bbacfdc2bcfb424339663be07a0db"
+        },
+        {
+          "installed_file": "include/nav2_amcl/map/map.hpp",
+          "source_file": "include/nav2_amcl/map/map.hpp",
+          "sha256": "5aa7632d3705cd937e3a353c21a0aa4231ed44587affcdae88963ab2e37e709b"
+        }
+      ],
+      "binary_records": [
+        {
+          "binary": "lib/libamcl_core.so",
+          "sha256": "ec04d0a7455c9da7a0b63d531fbef3f7d77ed5f7d0bf9bc5475f45c7c70e9f64"
+        }
+      ],
+      "logging_locations_matching": [
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 65,
+          "source_text": "RCLCPP_INFO(get_logger(), \"Creating\");"
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 239,
+          "source_text": "RCLCPP_INFO(get_logger(), \"Configuring\");"
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 259,
+          "source_text": "RCLCPP_INFO(get_logger(), \"Activating\");"
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 302,
+          "source_text": "RCLCPP_INFO(get_logger(), \"Deactivating\");"
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 322,
+          "source_text": "RCLCPP_INFO(get_logger(), \"Cleaning up\");"
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 393,
+          "source_text": "RCLCPP_INFO(get_logger(), \"Shutting down\");"
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 428,
+          "source_text": "RCLCPP_ERROR("
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 490,
+          "source_text": "RCLCPP_INFO(get_logger(), \"Initializing with uniform distribution\");"
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 495,
+          "source_text": "RCLCPP_INFO(get_logger(), \"Global initialisation done!\");"
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 516,
+          "source_text": "RCLCPP_INFO(get_logger(), \"Requesting no-motion update\");"
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 525,
+          "source_text": "RCLCPP_INFO(get_logger(), \"initialPoseReceived\");"
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 528,
+          "source_text": "RCLCPP_ERROR(get_logger(), \"Received initialpose message is malformed. Rejecting.\");"
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 532,
+          "source_text": "RCLCPP_WARN("
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 544,
+          "source_text": "RCLCPP_WARN("
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 573,
+          "source_text": "RCLCPP_WARN(get_logger(), \"Failed to transform initial pose in time (%s)\", e.what());"
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 588,
+          "source_text": "RCLCPP_INFO("
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 627,
+          "source_text": "RCLCPP_WARN(get_logger(), \"Waiting for map....\");"
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 654,
+          "source_text": "RCLCPP_ERROR(get_logger(), \"Couldn't determine robot's pose associated with laser scan\");"
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 697,
+          "source_text": "RCLCPP_DEBUG(get_logger(), \"Num samples: %d\\n\", set->sample_count);"
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 720,
+          "source_text": "RCLCPP_ERROR(get_logger(), \"No pose!\");"
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 750,
+          "source_text": "RCLCPP_ERROR("
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 806,
+          "source_text": "RCLCPP_WARN("
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 817,
+          "source_text": "RCLCPP_DEBUG("
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 891,
+          "source_text": "RCLCPP_ERROR(get_logger(), \"Couldn't get stats on cluster %d\", hyp_count);"
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 906,
+          "source_text": "RCLCPP_DEBUG("
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 926,
+          "source_text": "RCLCPP_WARN("
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 959,
+          "source_text": "RCLCPP_DEBUG(get_logger(), \"Publishing pose\");"
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 964,
+          "source_text": "RCLCPP_WARN("
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 969,
+          "source_text": "RCLCPP_DEBUG("
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 998,
+          "source_text": "RCLCPP_DEBUG(get_logger(), \"Failed to subtract base to odom transform: (%s)\", e.what());"
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 1022,
+          "source_text": "RCLCPP_INFO(get_logger(), \"createLaserObject\");"
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 1105,
+          "source_text": "RCLCPP_WARN("
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 1111,
+          "source_text": "RCLCPP_WARN("
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 1118,
+          "source_text": "RCLCPP_WARN("
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 1125,
+          "source_text": "RCLCPP_WARN("
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 1132,
+          "source_text": "RCLCPP_WARN("
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 1173,
+          "source_text": "RCLCPP_WARN("
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 1183,
+          "source_text": "RCLCPP_WARN("
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 1193,
+          "source_text": "RCLCPP_WARN("
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 1203,
+          "source_text": "RCLCPP_WARN("
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 1213,
+          "source_text": "RCLCPP_WARN("
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 1329,
+          "source_text": "RCLCPP_ERROR("
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 1382,
+          "source_text": "RCLCPP_DEBUG(get_logger(), \"AmclNode: A new map was received.\");"
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 1384,
+          "source_text": "RCLCPP_ERROR(get_logger(), \"Received map message is malformed. Rejecting.\");"
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 1399,
+          "source_text": "RCLCPP_INFO("
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 1405,
+          "source_text": "RCLCPP_WARN("
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 1481,
+          "source_text": "RCLCPP_INFO(get_logger(), \"initTransforms\");"
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 1523,
+          "source_text": "RCLCPP_INFO(get_logger(), \"initPubSub\");"
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 1541,
+          "source_text": "RCLCPP_INFO(get_logger(), \"Subscribed to map topic.\");"
+        }
+      ],
+      "provenance": "User reports official upstream source without local source modifications. Installed files and binary source-location evidence support the selected revision. A bit-for-bit rebuild and original toolchain recovery have not been performed."
+    },
+    {
+      "component": "nav2_amcl",
+      "distro": "jazzy",
+      "package_version": "1.3.12",
+      "upstream_commit": "6be3614013ec586051b86c97b919b293281490fe",
+      "source_archive": "navigation2-1.3.12.tar.gz",
+      "archive_sha256": "bcdf575c86250d63007595c992b9c5785c3ec907e897b79abfb4fc7eacbd1129",
+      "archive_bytes": 64747077,
+      "archive_url": "https://codeload.github.com/ros-navigation/navigation2/tar.gz/refs/tags/1.3.12",
+      "verified_upstream_file_count": 1542,
+      "installed_files_matching": [
+        {
+          "installed_file": "share/nav2_amcl/package.xml",
+          "source_file": "package.xml",
+          "sha256": "be3e9de09bef1d8795501c6829c9aba733f2d29ba4dfcc7da57e5bf1af5c47ed"
+        },
+        {
+          "installed_file": "share/nav2_amcl/plugins.xml",
+          "source_file": "plugins.xml",
+          "sha256": "39aa809b85e0b45d86bf08ee51000182be1972f98bc6e75293a8ec08a3c27258"
+        },
+        {
+          "installed_file": "include/nav2_amcl/portable_utils.hpp",
+          "source_file": "include/nav2_amcl/portable_utils.hpp",
+          "sha256": "7d23316bedb70d9e49a2780b5937fccf312497c92e1c854f39018abb29c1f2d0"
+        },
+        {
+          "installed_file": "include/nav2_amcl/amcl_node.hpp",
+          "source_file": "include/nav2_amcl/amcl_node.hpp",
+          "sha256": "1afedba75bee4f1c0e9bc7a9a4d08d459b3304a3d402c747f5db731fc39fc348"
+        },
+        {
+          "installed_file": "include/nav2_amcl/angleutils.hpp",
+          "source_file": "include/nav2_amcl/angleutils.hpp",
+          "sha256": "e84153118322e9531fb92a9eeb5f47189af7f86af8854bce855da66b106d64df"
+        },
+        {
+          "installed_file": "include/nav2_amcl/pf/pf.hpp",
+          "source_file": "include/nav2_amcl/pf/pf.hpp",
+          "sha256": "e3a5f7c84e1ae290faa56ff386ffc151c5c071d52421279bebdec34f1296659a"
+        },
+        {
+          "installed_file": "include/nav2_amcl/pf/eig3.hpp",
+          "source_file": "include/nav2_amcl/pf/eig3.hpp",
+          "sha256": "ded0cd9eb84c4cec085212b32ff16181ddb5fc2dc7bbd217c254747c354a55cb"
+        },
+        {
+          "installed_file": "include/nav2_amcl/pf/pf_vector.hpp",
+          "source_file": "include/nav2_amcl/pf/pf_vector.hpp",
+          "sha256": "1cafc26520ff368848614d6291094c55d83be9f7832516a23cea25d1cd45539f"
+        },
+        {
+          "installed_file": "include/nav2_amcl/pf/pf_pdf.hpp",
+          "source_file": "include/nav2_amcl/pf/pf_pdf.hpp",
+          "sha256": "228e4a9bb6fe5ba3bd59879106110bc3721fdec3cab6a5f0e2776f60cb80542c"
+        },
+        {
+          "installed_file": "include/nav2_amcl/pf/pf_kdtree.hpp",
+          "source_file": "include/nav2_amcl/pf/pf_kdtree.hpp",
+          "sha256": "2cd9157e9570afe56522f1565757d40df813db39f8fb548c5175a3795c624fbd"
+        },
+        {
+          "installed_file": "include/nav2_amcl/motion_model/differential_motion_model.hpp",
+          "source_file": "include/nav2_amcl/motion_model/differential_motion_model.hpp",
+          "sha256": "d94f2db89932252f90d0379870cfb2109d64392b891102fb8d9be6aeb9966bde"
+        },
+        {
+          "installed_file": "include/nav2_amcl/motion_model/motion_model.hpp",
+          "source_file": "include/nav2_amcl/motion_model/motion_model.hpp",
+          "sha256": "59060ff2e3603093814408e3f0bcbbd92b2e256f0a23f791e6f0b19e23067b10"
+        },
+        {
+          "installed_file": "include/nav2_amcl/motion_model/omni_motion_model.hpp",
+          "source_file": "include/nav2_amcl/motion_model/omni_motion_model.hpp",
+          "sha256": "2c701a2d14198df3cde2cd4f164815a6188d10de8cab8e59ff09c0374362553d"
+        },
+        {
+          "installed_file": "include/nav2_amcl/sensors/laser/laser.hpp",
+          "source_file": "include/nav2_amcl/sensors/laser/laser.hpp",
+          "sha256": "602056f75249a084d3e0f26040114e74351bbacfdc2bcfb424339663be07a0db"
+        },
+        {
+          "installed_file": "include/nav2_amcl/map/map.hpp",
+          "source_file": "include/nav2_amcl/map/map.hpp",
+          "sha256": "4a52678c51e088b4ccccc32c1176f6698dbc584ee2e789fb227533955a375d7d"
+        }
+      ],
+      "binary_records": [
+        {
+          "binary": "lib/libamcl_core.so",
+          "sha256": "e1ea2c351ce89f6d9566dd803e4db5c27957af5849c4e306595f3850d62bcbe1"
+        }
+      ],
+      "logging_locations_matching": [
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 65,
+          "source_text": "RCLCPP_INFO(get_logger(), \"Creating\");"
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 251,
+          "source_text": "RCLCPP_INFO(get_logger(), \"Configuring\");"
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 271,
+          "source_text": "RCLCPP_INFO(get_logger(), \"Activating\");"
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 314,
+          "source_text": "RCLCPP_INFO(get_logger(), \"Deactivating\");"
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 335,
+          "source_text": "RCLCPP_INFO(get_logger(), \"Cleaning up\");"
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 405,
+          "source_text": "RCLCPP_INFO(get_logger(), \"Shutting down\");"
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 440,
+          "source_text": "RCLCPP_ERROR("
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 502,
+          "source_text": "RCLCPP_INFO(get_logger(), \"Initializing with uniform distribution\");"
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 507,
+          "source_text": "RCLCPP_INFO(get_logger(), \"Global initialisation done!\");"
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 528,
+          "source_text": "RCLCPP_INFO(get_logger(), \"Requesting no-motion update\");"
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 537,
+          "source_text": "RCLCPP_INFO(get_logger(), \"initialPoseReceived\");"
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 540,
+          "source_text": "RCLCPP_ERROR(get_logger(), \"Received initialpose message is malformed. Rejecting.\");"
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 544,
+          "source_text": "RCLCPP_WARN("
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 554,
+          "source_text": "RCLCPP_ERROR("
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 564,
+          "source_text": "RCLCPP_WARN("
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 593,
+          "source_text": "RCLCPP_WARN(get_logger(), \"Failed to transform initial pose in time (%s)\", e.what());"
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 608,
+          "source_text": "RCLCPP_INFO("
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 647,
+          "source_text": "RCLCPP_WARN(get_logger(), \"Waiting for map....\");"
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 674,
+          "source_text": "RCLCPP_ERROR(get_logger(), \"Couldn't determine robot's pose associated with laser scan\");"
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 717,
+          "source_text": "RCLCPP_DEBUG(get_logger(), \"Num samples: %d\\n\", set->sample_count);"
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 740,
+          "source_text": "RCLCPP_ERROR(get_logger(), \"No pose!\");"
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 770,
+          "source_text": "RCLCPP_ERROR("
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 826,
+          "source_text": "RCLCPP_WARN("
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 837,
+          "source_text": "RCLCPP_DEBUG("
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 843,
+          "source_text": "RCLCPP_WARN("
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 920,
+          "source_text": "RCLCPP_ERROR(get_logger(), \"Couldn't get stats on cluster %d\", hyp_count);"
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 935,
+          "source_text": "RCLCPP_DEBUG("
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 955,
+          "source_text": "RCLCPP_WARN("
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 988,
+          "source_text": "RCLCPP_DEBUG(get_logger(), \"Publishing pose\");"
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 993,
+          "source_text": "RCLCPP_WARN("
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 998,
+          "source_text": "RCLCPP_DEBUG("
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 1027,
+          "source_text": "RCLCPP_DEBUG(get_logger(), \"Failed to subtract base to odom transform: (%s)\", e.what());"
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 1051,
+          "source_text": "RCLCPP_INFO(get_logger(), \"createLaserObject\");"
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 1135,
+          "source_text": "RCLCPP_WARN("
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 1141,
+          "source_text": "RCLCPP_WARN("
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 1148,
+          "source_text": "RCLCPP_WARN("
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 1155,
+          "source_text": "RCLCPP_WARN("
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 1162,
+          "source_text": "RCLCPP_WARN("
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 1203,
+          "source_text": "RCLCPP_WARN("
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 1213,
+          "source_text": "RCLCPP_WARN("
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 1223,
+          "source_text": "RCLCPP_WARN("
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 1233,
+          "source_text": "RCLCPP_WARN("
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 1243,
+          "source_text": "RCLCPP_WARN("
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 1359,
+          "source_text": "RCLCPP_ERROR("
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 1412,
+          "source_text": "RCLCPP_DEBUG(get_logger(), \"AmclNode: A new map was received.\");"
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 1414,
+          "source_text": "RCLCPP_ERROR(get_logger(), \"Received map message is malformed. Rejecting.\");"
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 1429,
+          "source_text": "RCLCPP_INFO("
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 1435,
+          "source_text": "RCLCPP_WARN("
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 1513,
+          "source_text": "RCLCPP_INFO(get_logger(), \"initTransforms\");"
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 1555,
+          "source_text": "RCLCPP_INFO(get_logger(), \"initPubSub\");"
+        },
+        {
+          "source_file": "nav2_amcl/src/amcl_node.cpp",
+          "line": 1573,
+          "source_text": "RCLCPP_INFO(get_logger(), \"Subscribed to map topic.\");"
+        }
+      ],
+      "provenance": "User reports official upstream source without local source modifications. Installed files and binary source-location evidence support the selected revision. A bit-for-bit rebuild and original toolchain recovery have not been performed."
+    }
+  ]
+}
